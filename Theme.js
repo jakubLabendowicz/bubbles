@@ -18,19 +18,17 @@ dark.add("--barBackgroundColor", "black");
 dark.add("--barIconColor", "white");
 dark.add("--barIconBackgroundColor", "#212121");
 
-var themeSwitch = new ThemeSwitch("Switch");
+var themeSwitch = new ThemeSwitch();
 themeSwitch.add(light);
 themeSwitch.add(dark);
 
+themeSwitch.addButton("themeStatus");
 themeSwitch.addStatus("themeStatus");
 
 themeSwitch.addSchedule(0, 8.00, 19.59);
 themeSwitch.addSchedule(1, 20.00, 7.59);
 
-
 document.getElementById("themeStatus").addEventListener('click',function () {themeSwitch.show()});
-
-
 
 
 
@@ -45,9 +43,11 @@ defoultBubbleTheme.add("--bubbleBootomColor3", "#3f51b5");
 
 var personalizedBubbleTheme = new Theme("bubbleTheme");
 
-var defoultBubbleSwitch = new ThemeSwitch("Switch");
+var defoultBubbleSwitch = new ThemeSwitch();
 defoultBubbleSwitch.add(defoultBubbleTheme);
 defoultBubbleSwitch.add(personalizedBubbleTheme);
+
+themeSwitch.addButton("bubbleThemeSetter");
 
 defoultBubbleSwitch.addSchedule(0, 0.00, 23.59);
 

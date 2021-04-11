@@ -17,7 +17,7 @@ body{
 }
 
 .panel .p-bar {
-  background-color: var(--bubbleTopColor1);
+  background-color: var(--barBackgroundColor);
 }
 
 /* .panel {

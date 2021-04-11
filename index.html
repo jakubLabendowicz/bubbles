@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="allDesign/css/bodyStyle.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body id="container" onload="clock(), Theme.auto(7), setSubjects()">
+  <body id="container" onload="clock(), setSubjects()">
     <div class="dotgroup1 dot1"></div>
     <div class="dotgroup1 dot2"></div>
     <div class="dotgroup1 dot3"></div>
@@ -49,7 +49,7 @@
       </div>
       <div class="p-bar" id="bar">
         <div class="p-barBox">
-          <button class="p-barBoxElement" onclick="Theme.change(7), BubblesColor.change()" id="themeStatus">Change</button>
+          <button class="p-barBoxElement" id="themeStatus">Change</button>
         </div>
         <div class="p-barBox">
           <button class="p-barBoxElement" onclick="mainCard.open()" style="font-size: 8px;">Bookmarks</button>
@@ -201,8 +201,11 @@
     <script type="text/javascript" src="setHistory.js"></script>
     <script type="text/javascript" src="projects/allSchool/js/openSites.js"></script>
 
-    <!-- <script src="https://jakublabendowicz.github.io/allDesign/js/Theme.js"></script> -->
-    <script src="allDesign/js/Theme.js"></script>
+
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script src="https://labendowicz.pl/Wilga/js/Theme.js"></script>
+    <script src="Theme.js"></script>
+
     <script src="allDesign/js/Card.js"></script>
     <script src="allDesign/js/Panel.js"></script>
   </body>

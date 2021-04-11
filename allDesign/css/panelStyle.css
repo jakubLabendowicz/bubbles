@@ -5,6 +5,8 @@
   --panelBackgroundColor: white;
   --barColor: black;
   --barBackgroundColor: white;
+  --barIconColor: black;
+  --barIconBackgroundColor: #efefef;
 }
 
 button:focus {
@@ -66,7 +68,8 @@ a {
   margin-bottom: 25px;
   font-size: 13px;
   text-align: center;
-  background-color: #efefef;
+  background-color: var(--barIconBackgroundColor);
+  color: var(--barIconColor);
 }
 .panel .p-bar .p-barBox .p-barBoxElement .p-barBoxElementIcon {
   border: none;

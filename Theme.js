@@ -28,8 +28,6 @@ themeController.addStatus("themeStatus");
 themeController.addSchedule(0, 8.00, 19.59);
 themeController.addSchedule(1, 20.00, 7.59);
 
-document.getElementById("themeStatus").addEventListener('click',function () {themeController.show()});
-
 
 
 
@@ -46,8 +44,6 @@ var personalizedBubbleTheme = new Theme("bubbleTheme");
 var defoultBubbleController = new ThemeController();
 defoultBubbleController.add(defoultBubbleTheme);
 defoultBubbleController.add(personalizedBubbleTheme);
-
-defoultBubbleController.addButton("bubbleThemeSetter");
 
 defoultBubbleController.addSchedule(0, 0.00, 23.59);
 

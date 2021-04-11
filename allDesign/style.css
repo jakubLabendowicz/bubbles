@@ -1,0 +1,22 @@
+.panel .p-bar {
+  background-color: #01579b;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+}
+
+.box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+  background-color: var(--bodyBackgroundColor);
+  /* background-color: #4caf50; */
+  border-style: solid;
+  border-color: #01579b;
+  border-width: 5px;
+  font-size: 60px;
+  padding: 30px;
+  /* height: 450px; */
+  /* width: 450px; */
+}

@@ -1,0 +1,103 @@
+.panel {
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 0px 30px 30px 0px;
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+  background-color: var(--panelBackgroundColor);
+  color: var(--panelColor);
+  .p-header {
+    width: 350px;
+    padding: 25px;
+    .p-title {
+      text-align: center;
+      font-size: 40px;
+    }
+    .p-subtitle {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  .p-bar {
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 0px 30px 0px 0px;
+    box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+    width: 50px;
+    padding: 25px;
+    background-color: var(--barBackgroundColor);
+    color: var(--barColor);
+    .p-barBox {
+      .p-barBoxElement {
+        border: none;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 25px;
+        background-color: white;
+        font-size: 13px;
+        text-align: center;
+        .p-barBoxElementIcon {
+          border: none;
+          border-radius: 10px;
+          width: 50px;
+          height: 50px;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .p-card {
+    margin-left: 100px;
+    width: 200px;
+    padding: 25px;
+    .p-cardBox {
+      padding: 20px 0px;
+      margin: 20px 0px;
+      .p-cardBoxHeader {
+        .p-cardBoxIcon {
+
+        }
+        .p-cardBoxTitle {
+          font-size: 25px;
+        }
+        .p-cardBoxSubitle {
+          font-size: 20px;
+        }
+      }
+      .p-cardBoxElement {
+        padding: 5px 0px;
+        .p-cardBoxElementHeader {
+          .p-cardBoxElementIcon {
+
+          }
+          .p-cardBoxElementTitle {
+            font-size: 15px;
+          }
+          .p-cardBoxElementSubitle {
+            font-size: 10px;
+          }
+        }
+        .p-cardBoxElementContent {
+
+        }
+      }
+    }
+  }
+}
+
+.panelButton {
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../menu.png');
+  background-size: contain;
+  border: none;
+  border-radius: 10px;
+}

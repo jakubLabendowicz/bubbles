@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name=”viewport”
+          content=”width=device_display, initial-scale=1.0″ />
+    <title>Template</title>
+    <link rel="stylesheet"
+          href="css/bodyStyle.css">
+    <link rel="stylesheet"
+          media="screen and (min-width: 900px)"
+          href="css/panelStyle.css">
+    <link rel="stylesheet"
+          media="screen and (max-width: 900px)"
+          href="css/mobile/panelStyle.css">
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.3.1/less.min.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="panel.less" /> -->
+  </head>
+  <body onload="Theme.auto(7)">
+    <div class="box">
+      Matematyka
+    </div>
+
+
+    <div class="panel" id="panel">
+      <div class="p-header">
+        <div class="p-title">School</div>
+      </div>
+      <div class="p-bar">
+        <div class="p-barBox" id="bar">
+          <button class="p-barBoxElement" onclick="Theme.change(7)" id="themeStatus">Change</button>
+        </div>
+      </div>
+      <div class="p-card" id="mainCard">
+        <div class="p-cardBox">
+          <!-- <div class="p-cardBoxHeader">
+            <div class="p-cardBoxIcon"></div>
+            <div class="p-cardBoxTitle">Remember</div>
+          </div> -->
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">63 days to the exams</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxIcon"></div>
+            <div class="p-cardBoxTitle">Shorts</div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Moodle</div>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Schedule</div>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">EHMS</div>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Sylabus</div>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Facebook</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxIcon"></div>
+            <div class="p-cardBoxTitle">Matematyka</div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Open links</div>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Teams</div>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Moodle</div>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementIcon"></div>
+              <div class="p-cardBoxElementTitle">Frequency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="panelButton" onclick="openPanel()"></button>
+
+    <script type="text/javascript" src="js/Theme.js"></script>
+    <script type="text/javascript" src="js/Card.js"></script>
+    <script type="text/javascript" src="js/Panel.js"></script>
+  </body>
+</html>

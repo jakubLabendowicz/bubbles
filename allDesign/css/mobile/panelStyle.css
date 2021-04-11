@@ -1,0 +1,117 @@
+:root {
+  --panelColor: black;
+  --panelBackgroundColor: white;
+  --barColor: black;
+  --barBackgroundColor: #01579b;
+}
+
+.panel {
+  display: block;
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  /* border-radius: 0px 30px 30px 0px; */
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+  background-color: var(--panelBackgroundColor);
+  color: var(--panelColor);
+}
+.panel .p-header {
+  width: 100%;
+  padding: 25px 0px;
+}
+.panel .p-header .p-title {
+  text-align: center;
+  font-size: 40px;
+}
+.panel .p-header .p-subtitle {
+  text-align: center;
+  font-size: 30px;
+}
+.panel .p-bar {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  /* border-radius: 0px 30px 0px 0px; */
+  box-shadow: 12px 12px 96px rgba(0, 0, 0, 0.16);
+  height: 50px;
+  padding: 25px;
+  background-color: var(--barBackgroundColor);
+  color: var(--barColor);
+}
+.panel .p-bar .p-barBox .p-barBoxElement {
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 25px;
+  background-color: white;
+  font-size: 13px;
+  text-align: center;
+  float: right;
+}
+.panel .p-bar .p-barBox .p-barBoxElement .p-barBoxElementIcon {
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+.panel .p-card {
+  margin-left: 100px;
+  width: 200px;
+  padding: 25px;
+}
+.panel .p-card .p-cardBox {
+  padding: 20px 0px;
+  margin: 20px 0px;
+}
+.panel .p-card .p-cardBox .p-cardBoxHeader .p-cardBoxTitle {
+  font-size: 25px;
+}
+.panel .p-card .p-cardBox .p-cardBoxHeader .p-cardBoxSubitle {
+  font-size: 20px;
+}
+.panel .p-card .p-cardBox .p-cardBoxElement {
+  padding: 5px 0px;
+}
+.panel .p-card .p-cardBox .p-cardBoxElement .p-cardBoxElementHeader .p-cardBoxElementTitle {
+  font-size: 15px;
+}
+.panel .p-card .p-cardBox .p-cardBoxElement .p-cardBoxElementHeader .p-cardBoxElementSubitle {
+  font-size: 10px;
+}
+.panelButton {
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  width: 50px;
+  height: 50px;
+  background-image: url('../../icons/menu.png');
+  background-size: contain;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+@keyframes openPanel {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes closePanel {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

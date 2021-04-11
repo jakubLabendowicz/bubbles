@@ -47,7 +47,7 @@ var defoultBubbleSwitch = new ThemeSwitch();
 defoultBubbleSwitch.add(defoultBubbleTheme);
 defoultBubbleSwitch.add(personalizedBubbleTheme);
 
-themeSwitch.addButton("bubbleThemeSetter");
+defoultBubbleSwitch.addButton("bubbleThemeSetter");
 
 defoultBubbleSwitch.addSchedule(0, 0.00, 23.59);
 

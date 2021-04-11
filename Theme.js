@@ -14,9 +14,11 @@ dark.add("--panelBackgroundColor", "black");
 dark.add("--barColor", "white");
 dark.add("--barBackgroundColor", "black");
 
-var themeSwitch = new ThemeSwitch("Switch", "themeStatus");
+var themeSwitch = new ThemeSwitch("Switch");
 themeSwitch.add(light);
 themeSwitch.add(dark);
+
+themeSwitch.addStatus("themeStatus");
 
 themeSwitch.addSchedule(0, 8.00, 19.59);
 themeSwitch.addSchedule(1, 20.00, 7.59);

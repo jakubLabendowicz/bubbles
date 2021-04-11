@@ -8,7 +8,6 @@ light.add("--barBackgroundColor", "white");
 light.add("--barIconColor", "black");
 light.add("--barIconBackgroundColor", "#efefef");
 
-
 var dark = new Theme("Dark");
 dark.add("--bodyColor", "white");
 dark.add("--bodyBackgroundColor", "black");
@@ -44,14 +43,15 @@ defoultBubbleTheme.add("--bubbleBootomColor1", "#d14f4f");
 defoultBubbleTheme.add("--bubbleBootomColor2", "#e91e63");
 defoultBubbleTheme.add("--bubbleBootomColor3", "#3f51b5");
 
+var personalizedBubbleTheme = new Theme("bubbleTheme");
+
 var defoultBubbleSwitch = new ThemeSwitch("Switch");
 defoultBubbleSwitch.add(defoultBubbleTheme);
+defoultBubbleSwitch.add(personalizedBubbleTheme);
+
 defoultBubbleSwitch.addSchedule(0, 0.00, 23.59);
 
-
-
-
-function bubbles() {
+document.getElementById("bubbleThemeSetter").addEventListener('click',function () {
   var bubbleTopColor = document.getElementById('bubbleTopColor').value;
   var bubbleBootomColor = document.getElementById('bubbleBootomColor').value;
 
@@ -74,15 +74,12 @@ function bubbles() {
     bubbleBootomColor3 = "#4FD153";
   }
 
-  var bubbleTheme = new Theme("bubbleTheme");
-  bubbleTheme.add("--bubbleTopColor1", bubbleTopColor1);
-  bubbleTheme.add("--bubbleTopColor2", bubbleTopColor2);
-  bubbleTheme.add("--bubbleTopColor3", bubbleTopColor3);
-  bubbleTheme.add("--bubbleBootomColor1", bubbleBootomColor1);
-  bubbleTheme.add("--bubbleBootomColor2", bubbleBootomColor2);
-  bubbleTheme.add("--bubbleBootomColor3", bubbleBootomColor3);
+  personalizedBubbleTheme.add("--bubbleTopColor1", bubbleTopColor1);
+  personalizedBubbleTheme.add("--bubbleTopColor2", bubbleTopColor2);
+  personalizedBubbleTheme.add("--bubbleTopColor3", bubbleTopColor3);
+  personalizedBubbleTheme.add("--bubbleBootomColor1", bubbleBootomColor1);
+  personalizedBubbleTheme.add("--bubbleBootomColor2", bubbleBootomColor2);
+  personalizedBubbleTheme.add("--bubbleBootomColor3", bubbleBootomColor3);
 
-  var bubbleSwitch = new ThemeSwitch("bubbleSwitch");
-  bubbleSwitch.add(bubbleTheme);
-  bubbleSwitch.show()
-}
+  defoultBubbleSwitch.show(1);
+});

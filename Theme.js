@@ -18,17 +18,17 @@ dark.add("--barBackgroundColor", "black");
 dark.add("--barIconColor", "white");
 dark.add("--barIconBackgroundColor", "#212121");
 
-var themeSwitch = new ThemeSwitch();
-themeSwitch.add(light);
-themeSwitch.add(dark);
+var themeController = new ThemeController();
+themeController.add(light);
+themeController.add(dark);
 
-themeSwitch.addButton("themeStatus");
-themeSwitch.addStatus("themeStatus");
+themeController.addButton("themeStatus");
+themeController.addStatus("themeStatus");
 
-themeSwitch.addSchedule(0, 8.00, 19.59);
-themeSwitch.addSchedule(1, 20.00, 7.59);
+themeController.addSchedule(0, 8.00, 19.59);
+themeController.addSchedule(1, 20.00, 7.59);
 
-document.getElementById("themeStatus").addEventListener('click',function () {themeSwitch.show()});
+document.getElementById("themeStatus").addEventListener('click',function () {themeController.show()});
 
 
 
@@ -43,13 +43,13 @@ defoultBubbleTheme.add("--bubbleBootomColor3", "#3f51b5");
 
 var personalizedBubbleTheme = new Theme("bubbleTheme");
 
-var defoultBubbleSwitch = new ThemeSwitch();
-defoultBubbleSwitch.add(defoultBubbleTheme);
-defoultBubbleSwitch.add(personalizedBubbleTheme);
+var defoultBubbleController = new ThemeController();
+defoultBubbleController.add(defoultBubbleTheme);
+defoultBubbleController.add(personalizedBubbleTheme);
 
-defoultBubbleSwitch.addButton("bubbleThemeSetter");
+defoultBubbleController.addButton("bubbleThemeSetter");
 
-defoultBubbleSwitch.addSchedule(0, 0.00, 23.59);
+defoultBubbleController.addSchedule(0, 0.00, 23.59);
 
 document.getElementById("bubbleThemeSetter").addEventListener('click',function () {
   var bubbleTopColor = document.getElementById('bubbleTopColor').value;
@@ -81,5 +81,5 @@ document.getElementById("bubbleThemeSetter").addEventListener('click',function (
   personalizedBubbleTheme.add("--bubbleBootomColor2", bubbleBootomColor2);
   personalizedBubbleTheme.add("--bubbleBootomColor3", bubbleBootomColor3);
 
-  defoultBubbleSwitch.show(1);
+  defoultBubbleController.show(1);
 });

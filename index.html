@@ -55,7 +55,7 @@
         </div>
         <div class="p-barBox">
           <button class="p-barBoxElement" onclick="mainCard.open()" style="font-size: 8px;">Bookmarks</button>
-          <button class="p-barBoxElement" onclick="settingsCard.open()" style="font-size: 10px;">Settings</button>
+          <button class="p-barBoxElement" onclick="settingsCard.open()" style="font-size: 10px;">Colors</button>
         </div>
       </div>
       <div class="p-card" id="mainCard">
@@ -153,13 +153,14 @@
           <div class="p-cardBoxElement">
             <div class="p-cardBoxElementHeader">
               <select class="p-cardBoxElementTitle" id="bubbleTopColor">
-                <!-- <option value="mix">Mix</option> -->
+                <option value="mix">Mix</option>
                 <option value="#4F7FD1">Blue</option>
                 <option value="#4FD153">Green</option>
                 <option value="#CDD14F">Yellow</option>
                 <option value="#D14F4F">Red</option>
                 <option value="white">White</option>
                 <option value="black">Black</option>
+                <option value="#00000000">Transparent</option>
               </select>
             </div>
           </div>
@@ -178,6 +179,7 @@
                 <option value="#D14F4F">Red</option>
                 <option value="white">White</option>
                 <option value="black">Black</option>
+                <option value="#00000000">Transparent</option>
               </select>
             </div>
           </div>
@@ -188,7 +190,7 @@
           </div>
           <div class="p-cardBoxElement">
             <div class="p-cardBoxElementHeader">
-              <button class="p-cardBoxElementTitle" style="text-align: left; font-size: 30px;" onclick="bubbles()">Set</button>
+              <button class="p-cardBoxElementTitle" id="bubbleThemeSetter" style="text-align: left; font-size: 30px;" onclick="bubbles()">Set</button>
             </div>
           </div>
         </div>

@@ -7,6 +7,10 @@ light.add("--barColor", "black");
 light.add("--barBackgroundColor", "white");
 light.add("--barIconColor", "black");
 light.add("--barIconBackgroundColor", "#efefef");
+light.add("--bubbleTopColor1", "white");
+light.add("--bubbleTopColor2", "white");
+light.add("--bubbleTopColor3", "white");
+
 
 var dark = new Theme("Ciemny");
 dark.add("--bodyColor", "white");
@@ -15,8 +19,11 @@ dark.add("--panelColor", "white");
 dark.add("--panelBackgroundColor", "black");
 dark.add("--barColor", "white");
 dark.add("--barBackgroundColor", "black");
-light.add("--barIconColor", "white");
-light.add("--barIconBackgroundColor", "#efefef");
+dark.add("--barIconColor", "white");
+dark.add("--barIconBackgroundColor", "#212121");
+dark.add("--bubbleTopColor1", "black");
+dark.add("--bubbleTopColor2", "black");
+dark.add("--bubbleTopColor3", "black");
 
 var themeSwitch = new ThemeSwitch("Switch");
 themeSwitch.add(light);

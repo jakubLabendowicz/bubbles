@@ -2,9 +2,9 @@ var light = new Theme("Light");
 light.add("--bodyColor", "black");
 light.add("--bodyBackgroundColor", "white");
 light.add("--panelColor", "black");
-light.add("--panelBackgroundColor", "white");
+light.add("--panelBackgroundColor", "#ffffffcc");
 light.add("--barColor", "black");
-light.add("--barBackgroundColor", "white");
+light.add("--barBackgroundColor", "#00000000");
 light.add("--barIconColor", "black");
 light.add("--barIconBackgroundColor", "#efefef");
 
@@ -12,9 +12,9 @@ var dark = new Theme("Dark");
 dark.add("--bodyColor", "white");
 dark.add("--bodyBackgroundColor", "black");
 dark.add("--panelColor", "white");
-dark.add("--panelBackgroundColor", "black");
+dark.add("--panelBackgroundColor", "#000000cc");
 dark.add("--barColor", "white");
-dark.add("--barBackgroundColor", "black");
+dark.add("--barBackgroundColor", "#00000000");
 dark.add("--barIconColor", "white");
 dark.add("--barIconBackgroundColor", "#212121");
 

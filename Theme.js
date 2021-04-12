@@ -18,12 +18,14 @@ dark.add("--barBackgroundColor", "#00000000");
 dark.add("--barIconColor", "white");
 dark.add("--barIconBackgroundColor", "#212121");
 
-var themeController = new ThemeController();
+var themeController = new ThemeController("themeController");
 themeController.add(light);
 themeController.add(dark);
 
 themeController.addButton("themebutton");
 themeController.addStatus("themebutton");
+
+themeController.themeLoad();
 
 themeController.addSchedule(0, 8.00, 19.59);
 themeController.addSchedule(1, 20.00, 7.59);
@@ -41,7 +43,7 @@ defoultBubbleTheme.add("--bubbleBootomColor3", "#3f51b5");
 
 var personalizedBubbleTheme = new Theme("bubbleTheme");
 
-var defoultBubbleController = new ThemeController();
+var defoultBubbleController = new ThemeController("bubbleController");
 defoultBubbleController.add(defoultBubbleTheme);
 defoultBubbleController.add(personalizedBubbleTheme);
 
@@ -77,5 +79,5 @@ document.getElementById("bubbleThemeSetter").addEventListener('click',function (
   personalizedBubbleTheme.add("--bubbleBootomColor2", bubbleBootomColor2);
   personalizedBubbleTheme.add("--bubbleBootomColor3", bubbleBootomColor3);
 
-  defoultBubbleController.show(1);
+  defoultBubbleController.toogle(1);
 });

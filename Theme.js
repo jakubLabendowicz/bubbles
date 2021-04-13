@@ -25,8 +25,10 @@ themeController.add(dark);
 themeController.addButton("themebutton");
 themeController.addStatus("themebutton");
 
-themeController.addSchedule(0, 8.00, 19.59);
-themeController.addSchedule(1, 20.00, 7.59);
+// themeController.addSchedule(0, 8.00, 19.59);
+// themeController.addSchedule(1, 20.00, 7.59);
+
+themeController.themeLoad();
 
 
 

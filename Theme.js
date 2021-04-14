@@ -19,18 +19,16 @@ dark.add("--barIconColor", "white");
 dark.add("--barIconBackgroundColor", "#212121");
 
 var themeController = new ThemeController("themeController");
-themeController.add(light);
-themeController.add(dark);
+themeController.addTheme(light);
+themeController.addTheme(dark);
 
 themeController.addButton("themebutton");
+themeController.addButton("themebutton2");
 themeController.addStatus("themebutton");
 
-// themeController.addSchedule(0, 8.00, 19.59);
-// themeController.addSchedule(1, 20.00, 7.59);
+document.getElementById("defaultThemeSetter2").addEventListener('click',function () {themeController.synchronizeLocalTheme()});
 
-themeController.themeLoad();
-
-
+themeController.run();
 
 
 var defoultBubbleTheme = new Theme("defoultBubbleTheme");
@@ -44,10 +42,11 @@ defoultBubbleTheme.add("--bubbleBootomColor3", "#3f51b5");
 var personalizedBubbleTheme = new Theme("bubbleTheme");
 
 var defoultBubbleController = new ThemeController("bubbleController");
-defoultBubbleController.add(defoultBubbleTheme);
-defoultBubbleController.add(personalizedBubbleTheme);
+defoultBubbleController.addTheme(defoultBubbleTheme);
+defoultBubbleController.addTheme(personalizedBubbleTheme);
 
-defoultBubbleController.addSchedule(0, 0.00, 23.59);
+defoultBubbleController.run();
+
 
 document.getElementById("bubbleThemeSetter").addEventListener('click',function () {
   var bubbleTopColor = document.getElementById('bubbleTopColor').value;
@@ -79,5 +78,5 @@ document.getElementById("bubbleThemeSetter").addEventListener('click',function (
   personalizedBubbleTheme.add("--bubbleBootomColor2", bubbleBootomColor2);
   personalizedBubbleTheme.add("--bubbleBootomColor3", bubbleBootomColor3);
 
-  defoultBubbleController.toogle(1);
+  defoultBubbleController.toogleSessionTheme(1);
 });

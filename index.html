@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="allDesign/css/bodyStyle.css">
     <link rel="stylesheet" href="style.css">
 
-    <script src="https://labendowicz.pl/Wilga/js/Wilga.js"></script>
+    <!-- <script src="https://labendowicz.pl/Wilga/js/Wilga0.js"></script> -->
+    <script src="../Wilga/js/Wilga0.js"></script>
   </head>
   <body id="container" onload="clock(), setSubjects()">
     <div class="dotgroup1 dot1"></div>
@@ -118,10 +119,26 @@
       <div class="p-card" id="settingsCard">
         <div class="p-cardBox">
           <div class="p-cardBoxHeader">
-            <div class="p-cardBoxTitle">Top color</div>
+            <div class="p-cardBoxTitle">Theme</div>
           </div>
           <div class="p-cardBoxElement">
             <div class="p-cardBoxElementHeader">
+              <button class="p-cardBoxElementTitle" id="themebutton2">Change</button>
+            </div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <button class="p-cardBoxElementTitle" id="defaultThemeSetter2">Set as default</button>
+            </div>
+          </div>
+        </div>
+        <div class="p-cardBox">
+          <div class="p-cardBoxHeader">
+            <div class="p-cardBoxTitle">Bubbles</div>
+          </div>
+          <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementTitle">Top color:</div>
               <select class="p-cardBoxElementTitle" id="bubbleTopColor">
                 <option value="mix">Mix</option>
                 <option value="#4F7FD1">Blue</option>
@@ -134,11 +151,9 @@
               </select>
             </div>
           </div>
-          <div class="p-cardBoxHeader">
-            <div class="p-cardBoxTitle">Bottom color</div>
-          </div>
           <div class="p-cardBoxElement">
             <div class="p-cardBoxElementHeader">
+              <div class="p-cardBoxElementTitle">Bottom color:</div>
               <select class="p-cardBoxElementTitle" id="bubbleBootomColor">
                 <option value="mix">Mix</option>
                 <option value="#4F7FD1">Blue</option>
@@ -151,16 +166,16 @@
               </select>
             </div>
           </div>
-        </div>
-        <div class="p-cardBox">
-          <div class="p-cardBoxHeader">
-            <div class="p-cardBoxTitle"></div>
-          </div>
           <div class="p-cardBoxElement">
             <div class="p-cardBoxElementHeader">
-              <button class="p-cardBoxElementTitle" id="bubbleThemeSetter" style="text-align: left; font-size: 30px;">Set</button>
+              <button class="p-cardBoxElementTitle" id="bubbleThemeSetter">Change</button>
             </div>
           </div>
+          <!-- <div class="p-cardBoxElement">
+            <div class="p-cardBoxElementHeader">
+              <button class="p-cardBoxElementTitle" id="defaultBubbleThemeSetter">Set as default</button>
+            </div>
+          </div> -->
         </div>
       </div>
     </div>

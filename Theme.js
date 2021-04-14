@@ -8,15 +8,15 @@ light.add("--barBackgroundColor", "#00000000");
 light.add("--barIconColor", "black");
 light.add("--barIconBackgroundColor", "#efefef");
 
-var grey = new Theme("Grey");
-grey.add("--bodyColor", "white");
-grey.add("--bodyBackgroundColor", "#212121");
-grey.add("--panelColor", "white");
-grey.add("--panelBackgroundColor", "#212121cc");
-grey.add("--barColor", "black");
-grey.add("--barBackgroundColor", "#00000000");
-grey.add("--barIconColor", "black");
-grey.add("--barIconBackgroundColor", "#efefef");
+var dimmed = new Theme("Dimmed");
+dimmed.add("--bodyColor", "white");
+dimmed.add("--bodyBackgroundColor", "#212121");
+dimmed.add("--panelColor", "white");
+dimmed.add("--panelBackgroundColor", "#212121cc");
+dimmed.add("--barColor", "black");
+dimmed.add("--barBackgroundColor", "#00000000");
+dimmed.add("--barIconColor", "black");
+dimmed.add("--barIconBackgroundColor", "#efefef");
 
 var dark = new Theme("Dark");
 dark.add("--bodyColor", "white");
@@ -30,7 +30,7 @@ dark.add("--barIconBackgroundColor", "#212121");
 
 var themeController = new ThemeController("themeController");
 themeController.addTheme(light);
-themeController.addTheme(grey);
+themeController.addTheme(dimmed);
 themeController.addTheme(dark);
 
 themeController.addButton("themebutton");

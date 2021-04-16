@@ -64,10 +64,10 @@ class Search {
   }
 
   static openLink() {
-    window.open(Search.link);
+    window.open(Search.link, '_self');
   }
 
-  static autoSearch(data) {
+  static autoSearch(data="") {
     Search.setText(document.getElementById('textBar'+data).value);
     Search.setSearch(document.getElementById('searchSelector'+data).value);
     Search.setLink();
@@ -94,3 +94,5 @@ document.querySelector("#searchSelector").addEventListener("keyup", function(eve
     setHistory();
   }
 });
+
+document.getElementById('textBar').focus()

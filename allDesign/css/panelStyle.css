@@ -30,6 +30,7 @@ a {
   color: var(--panelColor);
   overflow-y: auto;
 }
+
 .panel::-webkit-scrollbar {
     width: 0px;
 }

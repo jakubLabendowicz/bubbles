@@ -1,0 +1,120 @@
+@import url("https://use.typekit.net/cnj7jwd.css");
+
+/* configuration */
+a {
+  text-decoration: none;
+}
+
+/* elements */
+.board{
+  --widthWithPadding: 1050px;
+  --padding: 100px;
+  --width: calc(var(--widthWithPadding) - var(--padding));
+  --margin: calc((100vw - var(--widthWithPadding)) / 2);
+  width: var(--width);
+  margin: 0px var(--margin);
+  position: sticky;
+
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-row-gap: 50px;
+
+  padding: 200px 100px 100px 0px;
+}
+
+@media screen and (max-width: 1300px) {
+  .board {
+    --widthWithPadding: 1000px;
+  }
+}
+
+.boardHeader {}
+.boardNav {
+  /* background-color: red; */
+}
+.boardMain {
+}
+
+.tab {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 50px;
+
+  padding: 50px;
+}
+.tabHeader {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 0px;
+}
+.tabTitle {
+  font-size: 100px;
+  text-align: center;
+}
+.tabSubtitle {
+  font-size: 30px;
+  text-align: center;
+}
+.tabMain {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 50px;
+}
+
+.component {
+  background-color: #607d8b1c;
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 20px;
+
+  padding: 20px;
+}
+.componentHeader {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+}
+.componentIcon {
+  background-color: #ffffffdd;
+  width: 100px;
+  height: 100px;
+}
+.componentTitles {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 10px;
+}
+.componentTitle {
+  font-size: 40px;
+}
+.componentSubtitle {
+  font-size: 20px;
+}
+.componentMain {
+  /* display: none; */
+}
+.componentFooter {}
+
+.element {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 5px;
+
+  padding: 5px;
+}
+.elementHeader {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 0px;
+}
+.elementTitle {
+  font-size: 25px;
+}
+.elementSubtitle {
+  font-size: 15px;
+}
+.elementMain {}
+.elementFooter {}

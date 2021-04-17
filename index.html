@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="allDesign/css/panelStyle.css">
     <link rel="stylesheet" href="allDesign/css/bodyStyle.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/boardStyle.css">
 
     <script src="https://labendowicz.pl/Wilga-Design-System/js/Wilga.js"></script>
   </head>
@@ -27,23 +28,55 @@
     <div class="dotgroup3 dot4"></div>
     <div class="dotgroup3 dot5"></div>
 
-    <div class="box">
-      <div class="clock" id="clock">time</div>
-      <div class="date" id="date"></div>
-      <div class="searchBox">
-        <div class="searchBar">
-          <input type="text" class="searchText" id="textBar" placeholder="Write here">
-          <select class="searchSelector" id="searchSelector">
-            <option value="Google">Google</option>
-            <option value="Youtube">Youtube</option>
-            <option value="Netflix">Netflix</option>
-            <option value="Facebook">Facebook</option>
-            <option value="Wikipedia">Wikipedia</option>
-          </select>
-        </div>
-        <button type="button" class="searchButton" id="searchButton" onclick="Search.autoSearch(''), setHistory('')">Search</button>
+    <main class="board">
+      <div class="boardNav">
+
       </div>
-    </div>
+      <div class="boardMain">
+        <section class="tab">
+          <header class="tabHeader">
+            <div class="tabTitle" id="clock"></div>
+            <div class="tabSubtitle" id="date"></div>
+          </header>
+          <div class="tabMain">
+            <!-- component searcher -->
+            <div class="component" style="background-color: #00000000">
+              <div class="componentHeader">
+
+              </div>
+              <div class="componentMain">
+                <div class="searchBox">
+                  <div class="searchBar">
+                    <input type="text" class="searchText" id="textBar" placeholder="Write here">
+                    <select class="searchSelector" id="searchSelector">
+                      <option value="Google">Google</option>
+                      <option value="Youtube">Youtube</option>
+                      <option value="Netflix">Netflix</option>
+                      <option value="Facebook">Facebook</option>
+                      <option value="Wikipedia">Wikipedia</option>
+                    </select>
+                  </div>
+                  <button type="button" class="searchButton" id="searchButton" onclick="Search.autoSearch(''), setHistory('')">Search</button>
+                </div>
+
+                <div class="element">
+                  <div class="elementHeader">
+                    <div class="elementTitle"></div>
+                  </div>
+                  <div class="elementMain">
+                  </div>
+                  <div class="elementFooter">
+                  </div>
+                </div>
+              </div>
+              <div class="componentFooter">
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <div class="panel" id="panel">
       <div class="p-header">

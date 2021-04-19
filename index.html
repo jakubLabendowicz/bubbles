@@ -14,21 +14,23 @@
     <script src="https://labendowicz.pl/Wilga-Design-System/js/Wilga.js"></script>
   </head>
   <body id="container" onload="clock(), setSubjects()">
-    <div class="dotgroup1 dot1"></div>
-    <div class="dotgroup1 dot2"></div>
-    <div class="dotgroup1 dot3"></div>
-    <div class="dotgroup1 dot4"></div>
-    <div class="dotgroup1 dot5"></div>
-    <div class="dotgroup2 dot1"></div>
-    <div class="dotgroup2 dot2"></div>
-    <div class="dotgroup2 dot3"></div>
-    <div class="dotgroup2 dot4"></div>
-    <div class="dotgroup2 dot5"></div>
-    <div class="dotgroup3 dot1"></div>
-    <div class="dotgroup3 dot2"></div>
-    <div class="dotgroup3 dot3"></div>
-    <div class="dotgroup3 dot4"></div>
-    <div class="dotgroup3 dot5"></div>
+    <div class="bubblesContainer">
+      <div class="dotgroup1 dot1"></div>
+      <div class="dotgroup1 dot2"></div>
+      <div class="dotgroup1 dot3"></div>
+      <div class="dotgroup1 dot4"></div>
+      <div class="dotgroup1 dot5"></div>
+      <div class="dotgroup2 dot1"></div>
+      <div class="dotgroup2 dot2"></div>
+      <div class="dotgroup2 dot3"></div>
+      <div class="dotgroup2 dot4"></div>
+      <div class="dotgroup2 dot5"></div>
+      <div class="dotgroup3 dot1"></div>
+      <div class="dotgroup3 dot2"></div>
+      <div class="dotgroup3 dot3"></div>
+      <div class="dotgroup3 dot4"></div>
+      <div class="dotgroup3 dot5"></div>
+    </div>
 
     <div class="container">
       <main class="board">
@@ -77,7 +79,15 @@
             </div>
           </div>
         </div>
-        <div class="boardNav"></div>
+        <div class="boardNav">
+          <!-- <button type="button" name="button" class="btn">Btn</button>
+          <button type="button" name="button" class="btn">Elo</button>
+          <button type="button" name="button" class="btn"></button>
+          <button type="button" name="button" class="btn"></button>
+          <button type="button" name="button" class="btn"></button>
+          <button type="button" name="button" class="btn"></button>
+          <button type="button" name="button" class="btn"></button> -->
+        </div>
       </main>
     </div>
 
@@ -217,13 +227,11 @@
 
     <button class="panelButton" onclick="openPanel()"></button>
 
-    <script type="text/javascript" src="js/clock.js"></script>
-    <script type="text/javascript" src="js/search.js"></script>
-    <script type="text/javascript" src="js/setHistory.js"></script>
-    <script type="text/javascript" src="projects/allSchool/js/openSites.js"></script>
-
+    <script src="js/clock.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/setHistory.js"></script>
+    <script src="projects/allSchool/js/openSites.js"></script>
     <script src="js/config/Theme.js"></script>
-
     <script src="js/Card.js"></script>
     <script src="js/Panel.js"></script>
   </body>

@@ -1,3 +1,4 @@
+/*board*/
 .board{
   display: grid;
   grid-template-columns: 100px auto 100px;
@@ -31,6 +32,7 @@
   padding: 0px;
 }
 
+/*tab*/
 .boardTabHeader {
   display: grid;
   grid-template-columns: auto;

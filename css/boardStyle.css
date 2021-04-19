@@ -1,64 +1,56 @@
-@import url("https://use.typekit.net/cnj7jwd.css");
-
-/* configuration */
-a {
-  text-decoration: none;
-}
-
-/* elements */
 .board{
-  --widthWithPadding: 1050px;
-  --padding: 100px;
-  --width: calc(var(--widthWithPadding) - var(--padding));
-  --margin: calc((100vw - var(--widthWithPadding)) / 2);
-  width: var(--width);
-  margin: 0px var(--margin);
-  position: sticky;
-
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
   grid-row-gap: 50px;
-
-  padding: 200px 100px 100px 0px;
+  padding: 0px;
 }
-
-@media screen and (max-width: 1300px) {
-  .board {
-    --widthWithPadding: 1000px;
-  }
-}
-
-.boardHeader {}
 .boardNav {
-  /* background-color: red; */
-}
-.boardMain {
-}
-
-.tab {
   display: grid;
   grid-template-columns: auto;
-  grid-row-gap: 50px;
-
-  padding: 50px;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  padding: 25px;
 }
-.tabHeader {
+.boardTabs {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 25px;
+}
+.boardTab {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 25px;
+  padding: 0px;
+}
+
+.boardTabHeader {
   display: grid;
   grid-template-columns: auto;
   grid-row-gap: 0px;
 }
-.tabTitle {
+.boardTabTitle {
   font-size: 100px;
   text-align: center;
 }
-.tabSubtitle {
+.boardTabSubtitle {
   font-size: 30px;
   text-align: center;
 }
-.tabMain {
+.boardTabSpace {
   display: grid;
   grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
   grid-row-gap: 50px;
+  padding: 0px;
 }
 
 .component {

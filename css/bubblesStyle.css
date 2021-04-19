@@ -1,0 +1,100 @@
+:root {
+  --bubbleTopColor1: #4F7FD1;
+  --bubbleTopColor2: #4F7FD1;
+  --bubbleTopColor3: #4F7FD1;
+  --bubbleBootomColor1: #D14F4F;
+  --bubbleBootomColor2: #CDD14F;
+  --bubbleBootomColor3: #4FD153;
+}
+
+.dotgroup1{
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: var(--bubbleBootomColor1);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -200px;
+  opacity: .7;
+  animation: animation1 15s infinite;
+}
+
+.dotgroup2{
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: var(--bubbleBootomColor2);
+  left: 20%;
+  transform: translateX(-50%);
+  bottom: -300px;
+  opacity: .7;
+  animation: animation2 30s infinite;
+}
+
+.dotgroup3{
+  position: fixed;
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  background-color: var(--bubbleBootomColor3);
+  left: 80%;
+  transform: translateX(-50%);
+  bottom: -300px;
+  opacity: .7;
+  animation: animation3 20s infinite;
+}
+
+.dot1{
+}
+
+.dot2{
+  animation-delay: 4s;
+  transform: translateX(10%);
+}
+
+.dot3{
+  animation-delay: 8s;
+  transform: translateX(-100%);
+}
+
+.dot4{
+  animation-delay: 12s;
+  transform: translateX(-60%);
+}
+
+.dot5{
+  animation-delay: 16s;
+  transform: translateX(50%);
+}
+
+@keyframes animation1 {
+  50%{
+    bottom: 75%;
+    background-color: var(--bubbleTopColor1);
+    height: 400px;
+    width: 400px;
+    border-radius: 10000px;
+  }
+}
+
+@keyframes animation2 {
+  50%{
+    bottom: 75%;
+    background-color: var(--bubbleTopColor2);
+    height: 400px;
+    width: 400px;
+    border-radius: 10000px;
+  }
+}
+
+@keyframes animation3 {
+  50%{
+    bottom: 75%;
+    background-color: var(--bubbleTopColor3);
+    height: 400px;
+    width: 400px;
+    border-radius: 10000px;
+  }
+}

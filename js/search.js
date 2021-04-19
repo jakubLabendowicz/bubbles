@@ -46,6 +46,12 @@ class Search {
         case Wikipedia.getName():
         Search.link = Wikipedia.getSource() + Search.getText();
           break;
+        case GTPlToEng.getName():
+        Search.link = GTPlToEng.getSource() + Search.getText();
+          break;
+        case GTEngToPl.getName():
+        Search.link = GTEngToPl.getSource() + Search.getText();
+          break;
       }
     }
     else {
@@ -68,8 +74,8 @@ class Search {
   }
 
   static autoSearch(data="") {
-    Search.setText(document.getElementById('textBar'+data).value);
-    Search.setSearch(document.getElementById('searchSelector'+data).value);
+    Search.setText(document.getElementById('textBar' + data).value);
+    Search.setSearch(document.getElementById('searchSelector' + data).value);
     Search.setLink();
     Search.openLink();
   }
@@ -80,6 +86,8 @@ let Youtube = new Search("Youtube", "https://www.youtube.com/results?search_quer
 let Facebook = new Search("Facebook", "https://www.facebook.com/search/top/?q=");
 let Netflix = new Search("Netflix", "https://www.netflix.com/search?q=");
 let Wikipedia = new Search("Wikipedia", "https://pl.wikipedia.org/w/index.php?search=");
+let GTPlToEng = new Search("Google Translator (PL -> ENG)", "https://translate.google.pl/?sl=pl&tl=en&text=")
+let GTEngToPl = new Search("Google Translator (ENG -> PL)", "https://translate.google.pl/?sl=en&tl=pl&text=")
 
 document.querySelector("#textBar").addEventListener("keyup", function(event) {
   if (event.keyCode == 13) {
